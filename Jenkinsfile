@@ -27,6 +27,8 @@ pipeline {
                         pwd
                         ls -la
                         python3.7 -m venv venv
+                        cd venv/bin
+                        source activate
                     '''
             }
         }
