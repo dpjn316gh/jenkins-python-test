@@ -30,7 +30,7 @@ pipeline {
                         ls -la
                         cd 3.7.4/bin
                         ls -la
-                        source activate
+                        . ./activate.sh
                     '''
             }
         }
