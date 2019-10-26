@@ -27,6 +27,7 @@ pipeline {
                         pwd
                         ls -la
                         pyvenv-3.7 install 3.7.4
+                        ls -la
                     '''
             }
         }
