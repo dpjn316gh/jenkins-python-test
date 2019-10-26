@@ -26,9 +26,7 @@ pipeline {
                 sh '''
                         pwd
                         ls -la
-                        python3.7 -m venv venv
-                        cd venv/bin
-                        source activate
+                        pyvenv-3.7 install 3.7.4
                     '''
             }
         }
