@@ -31,6 +31,7 @@ pipeline {
                         cd 3.7.4/bin
                         ls -la
                         . ./activate
+                        pip3.7 install -r requirements.txt
                     '''
             }
         }
