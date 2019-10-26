@@ -26,15 +26,7 @@ pipeline {
                 sh '''
                         pwd
                         ls -la
-                    '''
-            }
-        }
-        stage('Test environment') {
-            steps {
-                sh '''source activate ${BUILD_TAG}
-                      pip list
-                      which pip
-                      which python
+                        python3.7 -m venv venv
                     '''
             }
         }
