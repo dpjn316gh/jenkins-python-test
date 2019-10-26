@@ -26,12 +26,13 @@ pipeline {
                 sh '''
                         pwd
                         ls -la
-                        pyvenv-3.7 install 3.7.4
+                        python3.7 -m venv venv
                         ls -la
-                        cd 3.7.4/bin
+                        cd venv/bin
                         ls -la
                         . ./activate
-                        pip3.7 install -r requirements.txt
+                        cd ../..
+                        pip install -r requirements.txt
                     '''
             }
         }
